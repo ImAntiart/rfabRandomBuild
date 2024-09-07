@@ -1,0 +1,49 @@
+.nord {
+    color:#b6e2e7;
+}
+
+.ork {
+    color:#9effbb;
+}
+
+.redgard {
+    color:#9e8a77;
+}
+
+.kadjit {
+    color:#a2a8a8;
+}
+
+.bosmer {
+    color:#d0e088;
+}
+
+.altmer {
+    color:#e6ec8f;
+}
+
+.breton {
+    color:#b7f0f0;
+}
+.danmer {
+    color:#98c5ca;
+}
+.imperial {
+    color:#e2c7c5;
+}
+.argo {
+    color:#abca99;
+}
+
+
+
+"Норд": "#b6e2e7",
+"Орк": "#9effbb",
+"Редгард": "#9e8a77",
+"Каджит": "#a2a8a8",
+"Босмер": "#d0e088",
+"Альтмер": "#e6ec8f",
+"Бретонец": "#b7f0f0",
+"Данмер": "#98c5ca",
+"Имперец": "#e2c7c5",
+"Аргонианин": "#abca99"

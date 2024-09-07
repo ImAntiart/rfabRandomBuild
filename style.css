@@ -1,0 +1,130 @@
+body {
+    background-color: #474747;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+/*Разметка header'а*/
+
+header {
+    background-color: #333;
+    color: #fff;
+    height: 10vh; /* Высота header будет составлять 20% высоты видимой области экрана */
+}
+
+
+.left-column {
+    background-color:  rgb(121, 119, 119); /* Цвет левой колонки */
+    width: 2%; /* Ширина левой колонки */
+    height: 100vh; /* Высота колонки на всю высоту экрана */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Устанавливаем для фона ниже контента */
+}
+
+
+/*Разметка grid'а*/
+.parent {
+    padding-left: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Гибкие колонки */
+    grid-template-rows: auto; /* Для автоматического определения высоты */
+}
+    
+    .child {
+   /* background-color: rgba(109, 35, 35, 0.301);*/
+    }
+
+    .child.child_wide {
+    grid-column: span 2;
+    }
+
+    .child.child_high {
+    font-size: 30px;
+    grid-row: span 2;
+    padding-left: 30px;
+    text-align: center;
+    }
+
+    .child.child_big {
+    grid-column: span 2;
+    grid-row: span 2;
+    }
+
+    .child.child_extra {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .child.child_footer {
+grid-column: span 3;
+    }
+
+/*Разметка main'а*/
+
+main {
+padding-top: 20px;
+}
+
+.box {
+    color: #333;
+    width: 90%;
+    margin: 0 auto; /* Центрируем блок на странице */
+}
+
+.box > div {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Добавляем плавный переход для трансформации */
+}
+
+.box > div:hover {
+    transform: scale(1.05); /* Масштабируем блок при наведении курсора */
+}
+
+
+.rounded-image {
+    overflow: hidden;
+    width: 30%; /* Изменено на 100% */
+    height: auto; /* Изменено на 100% */
+}
+
+.rounded-image img {
+    width: 100%;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 30px;
+}
+
+/*Разметка footer'а*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    height: 10vh; 
+}
+
+.footer_text {
+    color: #fff;
+    align-self: flex-start; /* Поднимает текст наверх внутри футера */
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
